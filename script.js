@@ -6,6 +6,9 @@ myVid = document.getElementById('audio');
 myVid.volume = 0.2;
 window.addEventListener('DOMContentLoaded', (event) => {
   console.log('DOM fully loaded and parsed');
+  console.log('DOM fully loaded and parsed');
+  console.log('DOM fully loaded and parsed');
+  console.log('DOM fully loaded and parsed');
 });
 function deleteLast(el) {
   el.remove();
