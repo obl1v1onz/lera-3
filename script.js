@@ -11,7 +11,7 @@ function deleteLast(el) {
 const newspaperSpinning = [
   { transform: 'rotate(0) scale(2)' },
   { transform: 'scale(10)' },
-  { transform: 'scale(2)' },
+  { transform: 'scale(1)' },
 ];
 const newspaperTiming = {
   duration: 2000,
