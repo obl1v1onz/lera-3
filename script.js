@@ -3,20 +3,15 @@ let copHeart = heart.cloneNode(true);
 let body = document.querySelector('body');
 console.log(copHeart);
 myVid = document.getElementById('audio');
-myVid.volume = 0.2;
-window.addEventListener('DOMContentLoaded', (event) => {
-  console.log('DOM fully loaded and parsed');
-  console.log('DOM fully loaded and parsed');
-  console.log('DOM fully loaded and parsed');
-  console.log('DOM fully loaded and parsed');
-});
+myVid.volume = 0.1;
+
 function deleteLast(el) {
   el.remove();
 }
 const newspaperSpinning = [
   { transform: 'rotate(0) scale(2)' },
-  { transform: 'scale(7)' },
-  { display: 'none' },
+  { transform: 'scale(10)' },
+  { transform: 'scale(2)' },
 ];
 const newspaperTiming = {
   duration: 2000,
@@ -34,6 +29,7 @@ function clickBody(e) {
   console.log(copHeart);
   body.appendChild(copHeart);
   copHeart.animate(newspaperSpinning, newspaperTiming);
+  copHeart.style.overflow = 'hidden';
   copHeart.style.transition = 'all 0.5s ease-out';
   copHeart.style.fill = '20';
 }
